@@ -1,0 +1,104 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Arial',sans-serif;background:#fff8f0;display:flex;justify-content:center;align-items:center;height:100vh;}
+
+    .login-container{
+        display:flex;
+        width:800px;
+        height:500px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.1);
+        border-radius:10px;
+        overflow:hidden;
+    }
+
+    /* LEFT SIDE IMAGE */
+    .login-left{
+        flex:1;
+        background-image: url('https://via.placeholder.com/400x500/ff6347/fff?text=Mittalo+Masale');
+        background-size:cover;
+        background-position:center;
+        position:relative;
+    }
+
+    /* LOGO ON LEFT SIDE */
+    .login-left .brand-logo{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        width:180px;
+        height:auto;
+        background:white;
+        padding:20px;
+        border-radius:15px;
+        box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    /* RIGHT SIDE FORM */
+    .login-right{
+        flex:1;
+        background:white;
+        padding:50px 30px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .login-right h2{
+        color:#c0392b;
+        margin-bottom:10px;
+        text-align:center;
+    }
+    .login-right p{
+        text-align:center;
+        color:#555;
+        font-size:14px;
+    }
+
+    .login-right input{
+        padding:12px;
+        border-radius:5px;
+        border:1px solid #ccc;
+        width:100%;
+        font-size:14px;
+    }
+
+    .login-right button{
+        padding:12px;
+        border:none;
+        border-radius:5px;
+        background:#e74c3c;
+        color:white;
+        font-weight:bold;
+        font-size:16px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+    .login-right button:hover{
+        background:#c0392b;
+    }
+
+    .login-right .links{
+        display:flex;
+        justify-content:space-between;
+        font-size:12px;
+    }
+    .login-right .links a{
+        color:#e74c3c;
+        text-decoration:none;
+    }
+
+    @media(max-width:768px){
+        .login-container{
+            flex-direction:column;
+            width:90%;
+            height:auto;
+        }
+        .login-left{
+            height:200px;
+        }
+        .login-left .brand-logo{
+            width:120px;
+            padding:10px;
+        }
+    }
